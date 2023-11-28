@@ -5,7 +5,7 @@ Welcome to the documentation for the Task Management CRUD project. This document
 
 - [Introduction](#introduction)
 - [Project Structure](#project-structure)
-- [Installation & Usage](#installation)
+- [Installation & Usage](#installation-&-usage)
 - [Running the Project](#running-the-project)
 - [API Endpoints](#api-endpoints)
   - [Create a Task](#create-a-task)
