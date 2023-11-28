@@ -20,7 +20,6 @@ The Task Management CRUD project is designed to provide a robust solution for ma
 
 ## Project Structure
 
-Explain the directory structure of your project.
 
 ```plaintext
 
