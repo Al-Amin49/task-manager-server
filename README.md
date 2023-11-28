@@ -5,13 +5,10 @@ Welcome to the documentation for the Task Management CRUD project. This document
 
 - [Introduction](#introduction)
 - [Project Structure](#project-structure)
-<<<<<<< HEAD
 - [Installation and Usage](#installation-and-usage)
 - [Validation Rules](#validation-rules)
-=======
 - [Installation & Usage](#installation-&-usage)
 - [Running the Project](#running-the-project)
->>>>>>> 2dbdb8deed43e0639d740eaad3e689e40a4934c8
 - [API Endpoints](#api-endpoints)
   - [Create a Task](#create-a-task)
   - [Get All Tasks](#get-all-tasks)
@@ -24,11 +21,8 @@ Welcome to the documentation for the Task Management CRUD project. This document
 The Task Management CRUD project is designed to provide a robust solution for managing tasks efficiently. Leveraging the MVC architecture, this project ensures a clean separation of concerns, making it scalable, maintainable, and highly extensible.
 
 ## Project Structure
-
-<<<<<<< HEAD
  directory structure of project.
-=======
->>>>>>> 2dbdb8deed43e0639d740eaad3e689e40a4934c8
+
 
 ```plaintext
 
@@ -200,5 +194,3 @@ DELETE /api/v1/tasks/:id
 ```
 ### Special Thanks
 Thanks to SJ Innovation for your Support 
-=======
->>>>>>> 2dbdb8deed43e0639d740eaad3e689e40a4934c8
