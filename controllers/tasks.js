@@ -29,7 +29,7 @@ const updateTask=asyncWrapper(async(req, res, next)=>{
     { _id: taskID },
     req.body,
     {
-        //The runValidators: true option is used to explicitly tell Mongoose to re-run the validation rules specified in the schema during the update operation
+       
         new:true,
         runValidators:true
     }
