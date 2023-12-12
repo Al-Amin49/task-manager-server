@@ -84,7 +84,6 @@ Mongo_URI=write_your_mongodb_uri
 ```
 npm start
 ```
-<<<<<<< HEAD
 ### Validation Rules
 This section outlines the validation rules for the `Task` model in the Task Management API.
 
