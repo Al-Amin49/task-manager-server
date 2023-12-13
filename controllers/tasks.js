@@ -25,9 +25,17 @@ const getTask=asyncWrapper(async(req, res, next)=>{
 
 const updateTask=asyncWrapper(async(req, res, next)=>{
     const {id:taskID}=req.params;
+    const { title, description, dueDate, status } = req.body;
+
+    //when status is 'Completed', completed will be true
+    let completed=false;
+    if(status==='Completed'){
+        completed=true;
+    }
+
     const task= await Task.findOneAndUpdate(
     { _id: taskID },
-    req.body,
+    { title, description, dueDate, status, completed },
     {
        
         new:true,

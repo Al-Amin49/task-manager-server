@@ -1,4 +1,5 @@
 const express = require('express');
+ const cors = require('cors');
 const app=express();
 const connectDb = require('./db/connect');
 const tasks= require('./routes/tasks')
@@ -13,17 +14,17 @@ connectDb();
 
 //middlewares
 app.use(express.json())
+app.use(cors())
 
 
 //routes
 app.use('/api/v1/tasks', tasks)
-
-
+app.use(notFound);
+ app.use(errorHandler);
 app.get('/',(req, res)=>{
     res.status(200).json({message:'Hello task manager'})
 })
-app.use(notFound);
-// app.use(errorHandler);
+
 
 app.listen(port, ()=>{
     console.log('server running on 8000')
