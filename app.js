@@ -17,13 +17,13 @@ app.use(express.json())
 
 //routes
 app.use('/api/v1/tasks', tasks)
-app.use(notFound);
-app.use(errorHandler);
+
 
 app.get('/',(req, res)=>{
     res.status(200).json({message:'Hello task manager'})
 })
-
+app.use(notFound);
+app.use(errorHandler);
 
 app.listen(port, ()=>{
     console.log('server running on 8000')
